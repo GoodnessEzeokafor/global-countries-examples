@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "global-countries": "^2.0.0"
+    "global-countries": "^2.1.1"
   }
 }

@@ -13,8 +13,8 @@ const iraqFlag = globalCountries.getCountryFlag(country)
 // get call code
 const iraqCallCode = globalCountries.getCountryCallCode(country)
 
-// console.log("Capital of IRAQ is", iraqCapital.toUpperCase())
-// console.log("ISO CODES of IRAQ is", iraqIsoCodes)
-// console.log("IRAQ Flag", iraqFlag)
-// console.log("IRAQ Call Code", iraqCallCode)
+console.log("Capital of IRAQ is", iraqCapital.toUpperCase())
+console.log("ISO CODES of IRAQ is", iraqIsoCodes)
+console.log("IRAQ Flag", iraqFlag)
+console.log("IRAQ Call Code", iraqCallCode)
 
