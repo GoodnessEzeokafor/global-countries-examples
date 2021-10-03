@@ -28,4 +28,5 @@ const country  = "IRAQ"
 const iraqCallCode = globalCountries.getCountryCallCode(country)
 ```
 
-
+### Contribute
+Click this [link](./contributing.md) to see guidelines
