@@ -1,4 +1,4 @@
-## Global-countries example
+## Global-Countries Example
 
 This is a DROPDOWN example to select countries in React.JS
 
