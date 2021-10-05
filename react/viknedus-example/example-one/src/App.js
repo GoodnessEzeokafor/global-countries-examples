@@ -1,22 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+
+// require library
+const globalCountries = require("global-countries");
+// declare countries
+const countries = globalCountries.countries();
 
 function App() {
+  const [value, setValue] = useState(countries[0].country);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* countries dropdown created */}
+        <select onChange={(e) => setValue(e.target.value)} value={value}>
+          {countries.map(({ country, isoCodes }) => (
+            <option key={isoCodes} value={country}>
+              {country}
+            </option>
+          ))}
+        </select>
+        {/* Selected country */}
+        <p>Selected country is {value.toUpperCase()}</p>
       </header>
     </div>
   );
