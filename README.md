@@ -3,6 +3,13 @@
 ```
  npm i global-countries
 ```
+or
+
+```terminal
+yarn add global-countries
+```
+
+In `.js` files, the following codes will help
 
 ```js
 // Require the library
